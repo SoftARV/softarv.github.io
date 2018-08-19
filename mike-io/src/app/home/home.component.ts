@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  start: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.start = true;
+    }, 1000);
+  }
+
+  onTypingAnimationComplete() {
+
   }
 
 }
