@@ -1,0 +1,38 @@
+.navbar {
+  background:
+  radial-gradient(7px at 14px 14px, #ff5e57 0px, #ff635a 5px, #fd5249 6px, rgba(255, 255, 255, 0) 7px),
+  radial-gradient(7px at 34px 14px, #ffbd2e 0px, #ffc42f 5px, #fcb91b 6px, rgba(255, 255, 255, 0) 7px),
+  radial-gradient(7px at 54px 14px, #cfcfcf 0px, #d3d3d3 5px, #c6c6c6 6px, rgba(255, 255, 255, 0) 7px),
+  linear-gradient(to right, #cccccc 0%, #d6d6d6 1px, #ebebeb 100%);
+  width: 68px;
+  height: 100%;
+  .list {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .button {
+      background: linear-gradient(to top, #e4e1e1 0%, #ececec 1px, #ebebeb 100%);
+      &.active {
+        background: linear-gradient(to top, #acaaaa 0%, #c7c7c7 1px, #c7c7c7 100%);
+      }
+      height: 32px;
+      width: 52px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-style: solid;
+      border-radius: 10px;
+      border-width: 1px;
+      border-color: #c5c5c5;
+      .icon {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: #808080;
+      }
+    }
+  }
+}
