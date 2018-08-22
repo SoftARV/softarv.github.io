@@ -1,0 +1,25 @@
+.menu-button {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 68px;
+  div {
+    height: 22px;
+    width: 22px;
+  }
+  .close {
+    background: radial-gradient(7px, #ff5e57 0px, #ff635a 5px, #fd5249 6px, rgba(255, 255, 255, 0) 7px);
+  }
+  .mini {
+    background: radial-gradient(7px, #ffbd2e 0px, #ffc42f 5px, #fcb91b 6px, rgba(255, 255, 255, 0) 7px);
+  }
+  .max {
+    background: radial-gradient(7px, #cfcfcf 0px, #d3d3d3 5px, #c6c6c6 6px, rgba(255, 255, 255, 0) 7px);
+  }
+}

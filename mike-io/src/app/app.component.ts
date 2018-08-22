@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mike-io';
+  menuShow: boolean = true;
+  
+  onMenuButtonClick(menuShow: boolean) {
+    this.menuShow = menuShow;
+  }
 }
