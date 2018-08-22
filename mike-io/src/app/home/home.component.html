@@ -1,22 +1,54 @@
 <div class="home">
-  <h1>
-    <span 
-      typingAnimation
-      [typeSpeed]="60"
-      [condition]="start" 
-      [startDelay]="1000" 
-      (complete)="onTypingAnimationComplete()">
-      In Development
-    </span>
-  </h1>
-  <!-- <div class="title">
-    <h1>Miguel Rincon</h1>
-    <h2>Mobile and Web Developer</h2>
-  </div>
-  <div>
-    <p>
-      Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Node.js, Web Applications, Ionic Framework, and Mobile Applications. Strong engineering professional with a Engineer's degree focused in Computer Software Engineering from Universidad Rafael Belloso Chacín.
+  <div class="body">
+    <p><span id="user">softarv@io</span>:~$ <span typingAnimation [typeSpeed]="30" [startDelay]="1000" [hideCursorOnComplete]="true"
+        (complete)="onComplete(1)">Hi! I'm Miguel Rincon.</span></p>
+    <p *ngIf="second"><span id="user">softarv@io</span>:~$ <span typingAnimation [typeSpeed]="30" [startDelay]="500" [condition]="second"
+        [hideCursorOnComplete]="true" (complete)="onComplete(2)">And I'am a Mobile and Web Developer.</span></p>
+    <p *ngIf="third"><span id="user">softarv@io</span>:~$ <span typingAnimation [typeSpeed]="30" [startDelay]="500" [condition]="third"
+        [hideCursorOnComplete]="true" (complete)="onComplete(3)">head ~/intro.txt
+      </span></p>
+    <p *ngIf="showIntro">
+      I'm a experienced Front-End Developer with a demonstrated history of working in the information technology and services industry.
+      Skilled in Node.js, Web Applications, Ionic Framework, and Mobile Applications. Strong engineering professional with
+      a Engineer's degree focused in Computer Software Engineering from Universidad Rafael Belloso Chacín.
     </p>
-  </div> -->
-  
+    <p *ngIf="fourth"><span id="user">softarv@io</span>:~$ <span typingAnimation [typeSpeed]="30" [startDelay]="500" [condition]="fourth"
+        [hideCursorOnComplete]="true" (complete)="onComplete(4)">
+        head -n -0 ~/skills.txt</span></p>
+    <div *ngIf="showSkills">
+      <p id="skills">JavaScript</p>
+      <p id="bar">████████████████████████████████████░░░░</p>
+      <p id="skills">HTML</p>
+      <p id="bar">████████████████████████████████████████</p>
+      <p id="skills">CSS</p>
+      <p id="bar">██████████████████████████████░░░░░░░░░░</p>
+      <p id="skills">SASS</p>
+      <p id="bar">██████████████████████████████░░░░░░░░░░</p>
+      <p id="skills">Responsive Design</p>
+      <p id="bar">████████████████████████████████████████ </p>
+      <p id="skills">ES6</p>
+      <p id="bar">██████████████████████████████░░░░░░░░░░</p>
+      <p id="skills">TypeScript</p>
+      <p id="bar">██████████████████████████████░░░░░░░░░░</p>
+      <p id="skills">Angular</p>
+      <p id="bar">██████████████████████████████░░░░░░░░░░</p>
+      <p id="skills">Ionic 2</p>
+      <p id="bar">██████████████████████████████░░░░░░░░░░</p>
+      <p id="skills">NodeJS</p>
+      <p id="bar">████████████████████░░░░░░░░░░░░░░░░░░░░</p>
+      <p id="skills">React.JS</p>
+      <p id="bar">█████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░</p>
+      <p id="skills">React Native</p>
+      <p id="bar">█████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░</p>
+      <p id="skills">Flutter</p>
+      <p id="bar">Starting...</p>
+      <p id="skills">PHP</p>
+      <p id="bar">█████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░</p>
+      <p id="skills">MySQL</p>
+      <p id="bar">█████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░</p>
+    </div>
+    <p *ngIf="showSkills"><span id="user">softarv@io</span>:~$ <span typingAnimation [typeSpeed]="30" [startDelay]="500"
+        [condition]="showSkills"></span></p>
+  </div>
+
 </div>
