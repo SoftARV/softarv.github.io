@@ -14,7 +14,7 @@
 
     <div class="list">
       <div class="button">
-        <div class="border">
+        <div class="border" [ngClass]="checkActive('home')">
           <fa class="icon" name="home"></fa>
         </div>
         <span class="label">Home</span>
@@ -22,8 +22,8 @@
 
     </div>
     <div class="right-list">
-      <div class="button">
-        <div class="border">
+      <div class="button" (click)="onContactButtonClick()">
+        <div class="border" [ngClass]="checkActive('contact')">
           <fa class="icon" name="user"></fa>
         </div>
         <span class="label">Contact</span>

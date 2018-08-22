@@ -17,11 +17,11 @@ export class NavbarButtonComponent implements OnInit {
   onResize(event) {
     this.innerWidth = window.innerWidth;
     if (this.innerWidth <= 1070) {
-      this.isShowing = false;
-      this.menuShow.emit(this.isShowing);
+      // this.isShowing = false;
+      // this.menuShow.emit(this.isShowing);
     } else {
-      this.isShowing = true;
-      this.menuShow.emit(this.isShowing);
+      // this.isShowing = true;
+      // this.menuShow.emit(this.isShowing);
     }
   }
 
