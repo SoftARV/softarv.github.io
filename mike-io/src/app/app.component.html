@@ -1,5 +1,8 @@
 <div class="app">
   <app-navbar-button (menuShow)="onMenuButtonClick($event)"></app-navbar-button>
-  <app-navbar *ngIf="menuShow"></app-navbar>
-  <router-outlet></router-outlet>
+  <app-navbar *ngIf="menuShow" (contactShow)="onContactButtonClick($event)"></app-navbar>
+  <div class="main">
+    <router-outlet></router-outlet>
+    <app-contact-bar *ngIf="contactShow"></app-contact-bar>
+  </div>
 </div>

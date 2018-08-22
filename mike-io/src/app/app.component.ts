@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   menuShow: boolean = true;
+  contactShow: boolean = true;
   
   onMenuButtonClick(menuShow: boolean) {
     this.menuShow = menuShow;
+  }
+
+  onContactButtonClick(contactShow: boolean) {
+    this.contactShow = contactShow;
   }
 }
